@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - João Pedro Gritz</title>
+    <style>
+        body {
+            font-family: 'Calibri', 'Arial', sans-serif;
+            line-height: 1.4;
+            color: #000;
+            margin: 0;
+            padding: 0;
+            font-size: 11pt;
+            background-color: #fff;
+        }
+        .container {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px;
+            box-sizing: border-box;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        .header h1 {
+            font-size: 24pt;
+            margin: 0 0 5px 0;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        .contact-info {
+            font-size: 10pt;
+            margin: 5px 0;
+        }
+        .contact-info a {
+            color: #000;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        h2 {
+            font-size: 13pt;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-bottom: 1px solid #000;
+            margin: 18px 0 8px 0;
+            padding-bottom: 2px;
+            letter-spacing: 0.5px;
+        }
+        .summary-text {
+            text-align: justify;
+            margin: 0;
+        }
+        .skills-list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .skills-list li {
+            margin-bottom: 4px;
+        }
+        .project-item, .education-item {
+            margin-bottom: 12px;
+        }
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            margin-bottom: 3px;
+        }
+        .item-subheader {
+            display: flex;
+            justify-content: space-between;
+            font-style: italic;
+            font-size: 10.5pt;
+            margin-bottom: 5px;
+        }
+        ul.bullet-points {
+            margin: 0;
+            padding-left: 20px;
+        }
+        ul.bullet-points li {
+            margin-bottom: 3px;
+            text-align: justify;
+        }
+        @media print {
+            body {
+                font-size: 11pt;
+            }
+            .container {
+                padding: 0;
+            }
+            @page {
+                size: letter;
+                margin: 0.5in;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <h1>João Pedro Gritz</h1>
+        <div class="contact-info">
+            Rio de Janeiro, RJ, Brazil &nbsp;|&nbsp; +55 (21) 97065-XXXX &nbsp;|&nbsp; <a href="mailto:jpedrooliveiragritz@gmail.com">jpedrooliveiragritz@gmail.com</a>
+        </div>
+        <div class="contact-info">
+            <a href="https://linkedin.com/in/joão-pedro-oliveira-gritz-a24aa1288/">linkedin.com/in/joão-pedro-oliveira-gritz-a24aa1288/</a> &nbsp;|&nbsp; <a href="https://github.com/Splashyy7">github.com/Splashyy7</a>
+        </div>
+    </div>
+
+    <h2>Professional Summary</h2>
+    <p class="summary-text">
+        Highly motivated and technically proficient Software Engineering student in his 5th semester, combining solid backend development skills with fluent English communication (Cambridge Certified). Hands-on experience architecting robust, production-ready REST APIs using Java and the Spring Ecosystem, implementing advanced search engines, and designing multi-schema databases. Adept at agile collaboration and eager to leverage strong problem-solving skills in a remote international Software Engineering internship.
+    </p>
+
+    <h2>Technical Skills</h2>
+    <ul class="skills-list">
+        <li><strong>Languages:</strong> Java (21), JavaScript, Python, C#, HTML5, CSS3</li>
+        <li><strong>Frameworks & Libraries:</strong> Spring Boot (4.x), Spring Data JPA, Spring Web MVC, Hibernate, React, React Native, Entity Framework</li>
+        <li><strong>Databases & Search Engines:</strong> PostgreSQL (Multi-Schema), Elasticsearch (8.x), SQLite</li>
+        <li><strong>Tools & DevOps:</strong> Docker, Docker Compose, Git, GitHub, Maven, Caffeine Cache, OpenAPI / Swagger, Postman</li>
+    </ul>
+
+    <h2>Academic & Technical Projects</h2>
+
+    <div class="project-item">
+        <div class="item-header">
+            <span>API-Guilda (Advanced Backend Management System)</span>
+            <span>Sole Developer</span>
+        </div>
+        <div class="item-subheader">
+            <span>Java 21, Spring Boot 4, Elasticsearch, PostgreSQL, Docker Compose, Caffeine</span>
+            <span>Academic Project</span>
+        </div>
+        <ul class="bullet-points">
+            <li>Developed a comprehensive, enterprise-grade RESTful API using Java 21 and Spring Boot 4 to manage complex, multi-tenant subdomains (Adventure, Audit, and Operations).</li>
+            <li>Integrated <strong>Elasticsearch 8</strong> via Spring Data Elasticsearch to build a high-performance product catalog featuring text, multi-field, fuzzy, boolean queries, and custom data aggregations.</li>
+            <li>Designed a <strong>multi-schema PostgreSQL</strong> database separating transactional domain data, security/audit trails, and reporting views to guarantee high cohesion and data isolation.</li>
+            <li>Boosted application performance by implementation of <strong>Caffeine Cache</strong> with a 24-hour TTL to cache database-intensive materialized views.</li>
+            <li>Containerized the entire ecosystem using <strong>Docker Compose</strong> featuring automated health checks and wrote robust database seed scripts.</li>
+            <li>Documented over 30 endpoints using <strong>Springdoc OpenAPI (Swagger UI)</strong> and structured automated endpoint testing environments via Postman collections.</li>
+        </ul>
+    </div>
+
+    <div class="project-item">
+        <div class="item-header">
+            <span>Full-Stack Bicycle Shop E-Commerce</span>
+            <span>Full-Stack Developer</span>
+        </div>
+        <div class="item-subheader">
+            <span>React, Spring Boot, Java, REST API, Git</span>
+            <span>Team Project</span>
+        </div>
+        <ul class="bullet-points">
+            <li>Collaborated within an agile team environment to engineer a full-stack retail and inventory management application.</li>
+            <li>Built dynamic, responsive user interfaces and reusable frontend components using <strong>React</strong>, ensuring optimal user experience and intuitive workflows.</li>
+            <li>Developed scalable REST APIs with <strong>Spring Boot</strong> to process inventory management, user interactions, and order fulfillment.</li>
+            <li>Utilized Git and GitHub for team collaboration, managing branches, code reviews, and maintaining architectural code alignment.</li>
+        </ul>
+    </div>
+
+    <h2>Education</h2>
+    <div class="education-item">
+        <div class="item-header">
+            <span>B.S. in Software Engineering</span>
+            <span>Rio de Janeiro, Brazil</span>
+        </div>
+        <div class="item-subheader">
+            <span>Instituto Infnet</span>
+            <span>Expected Graduation: December 2027</span>
+        </div>
+    </div>
+
+    <h2>Certifications & Languages</h2>
+    <ul class="skills-list">
+        <li><strong>First Certificate in English (FCE)</strong> – Cambridge University Press & Assessment</li>
+        <li><strong>English:</strong> Full Professional Proficiency / Fluent (Cambridge Certified)</li>
+        <li><strong>Portuguese:</strong> Native Speaker</li>
+    </ul>
+
+</div>
+
+</body>
+</html>
